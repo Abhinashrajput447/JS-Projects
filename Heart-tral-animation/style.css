@@ -1,0 +1,54 @@
+/* Basic Setup */
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #1a1a2e, #000000);
+  cursor: crosshair;
+}
+
+/* Heart Elements */
+span {
+  position: absolute;
+  background: url("https://cdn4.iconfinder.com/data/icons/essentials-72/24/028_-_Heart-128.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  animation: floatUp 3s ease-out forwards;
+  filter: hue-rotate(0deg);
+  opacity: 0.8;
+}
+
+/* Floating & Color-changing Animation */
+@keyframes floatUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -200%) scale(1.2) rotate(180deg);
+    opacity: 0.8;
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -800%) scale(0.8) rotate(360deg);
+    opacity: 0;
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Background Glow Animation */
+@keyframes bgPulse {
+  0%, 100% {
+    background: radial-gradient(circle at center, #2a2a72, #000);
+  }
+  50% {
+    background: radial-gradient(circle at center, #7a1fa2, #000);
+  }
+}
+
+body {
+  animation: bgPulse 10s infinite alternate;
+}
