@@ -22,6 +22,5 @@ function updateText() {
   if(carrerIdx === carrers.length) {
     carrerIdx = 0;
   }
-
   setTimeout(updateText, 400);
 }
