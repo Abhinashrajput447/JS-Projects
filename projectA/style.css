@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  #FFFDD0;
+}
+#nav {
+    font-size: large;
+    display: flex;         
+    gap: 10px;    
+    margin-top: 1rem;   
+    text-align: center;
+    justify-content: center;
+}
+
+#nav a {
+    text-decoration: none; 
+    color: black;           
+    font-weight: bold;     
+}
+
+#nav a:hover {
+    color: #450693;
+}
+
+
+#welcome {
+    height: 40px;
+    width: 40%;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+#Project {
+    margin-top: -2rem;
+    color: #FA3D0D;
+}
+
+.scroll-container1 {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    /* flex-wrap: nowrap; */
+    margin-top: 10px;
+    margin-left: 4rem;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 4px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 375px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #FA3D0D;
+    color: White;
+    background-color: #33A1E0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    /* transform: translateY(2px); */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #1C6EA4;
+    border-color: #444;
+}
+
+.box1 select, .box2 select, .box3 select, .box4 select {
+    width: 100%;       
+    padding: 12px;     
+    font-size: 16px;   
+    border-radius: 6px;
+    border: 1px solid #333;
+    margin-bottom: 20px; 
+} 
+
+.scroll-container2 {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    /* flex-wrap: nowrap; */
+    margin-top: 6rem;
+    margin-left: 4rem;
+    padding-bottom: 10px;
+}
+
+.box5, .box6{
+    width: 375px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #33A1E0;
+}
+
+.box5 select, .box6 select{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    margin-top: 2rem;
+}

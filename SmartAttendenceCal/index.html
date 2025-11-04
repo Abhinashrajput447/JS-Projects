@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Attendance Calculator | L-T-P-S</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Attendance Calculator</h1>
+
+    <div class="card">
+      <form id="attendanceForm">
+        <p class="hint">💡 Choose your class type (Lecture / Tutorial / Practical / Skill)</p>
+
+        <div class="input-group">
+          <label for="classType">Select Class Type</label>
+          <select id="classType" required>
+            <option value="">-- Select Type --</option>
+            <option value="lecture">Lecture (100%)</option>
+            <option value="tutorial">Tutorial (50%)</option>
+            <option value="practical">Practical (25%)</option>
+            <option value="skill">Skill (25%)</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Total Classes Conducted</label>
+          <input type="number" id="totalClasses" placeholder="e.g. 40" required>
+        </div>
+
+        <div class="input-group">
+          <label>Classes Attended</label>
+          <input type="number" id="attendedClasses" placeholder="e.g. 32" required>
+        </div>
+
+        <div class="input-group">
+          <label>Planned Leave Days</label>
+          <input type="number" id="leaveDays" placeholder="e.g. 2">
+        </div>
+
+        <button type="submit">Calculate Attendance</button>
+      </form>
+    </div>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

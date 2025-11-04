@@ -1,0 +1,23 @@
+<select id="mySelect">
+  <option value="">Select a fruit</option>
+  <option value="Apple">Apple</option>
+  <option value="Banana">Banana</option>
+  <option value="Cherry">Cherry</option>
+  <option value="Mango">Mango</option>
+  <option value="Orange">Orange</option>
+</select>
+
+<input type="text" id="searchInput" placeholder="Search...">
+
+<script>
+const select = document.getElementById("mySelect");
+const input = document.getElementById("searchInput");
+
+input.addEventListener("input", function() {
+  const filter = this.value.toLowerCase();
+  for (let i = 0; i < select.options.length; i++) {
+    const txt = select.options[i].text.toLowerCase();
+    select.options[i].style.display = txt.includes(filter) ? "" : "none";
+  }
+});
+</script>
